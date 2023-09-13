@@ -17,6 +17,12 @@ app.use(userRoutes);
 app.use(noticeRoutes);
 app.use(timetableRoutes);
 app.use(galleryRoutes);
+
+app.get("/test", (req, res) => {
+    res.send("hii");
+  });
+
+  
 app.listen(4000, ()=> console.log('Server up and running...'));
 
 // import express from "express";
